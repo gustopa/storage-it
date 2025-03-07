@@ -71,7 +71,7 @@ export const createAccount = async ({
 export const verifySecret = async ({
   accountId,
   password,
-}: {
+} : {
   accountId: string;
   password: string;
 }) => {
