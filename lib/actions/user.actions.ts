@@ -5,7 +5,7 @@ import { appwriteConfig } from "@/lib/appwrite/config";
 import { Query, ID } from "node-appwrite";
 import { parseStringify } from "@/lib/utils";
 import { cookies } from "next/headers";
-import { avatarPlaceholderUrl } from "@/constants";
+// import { avatarPlaceholderUrl } from "@/constants";
 import { redirect } from "next/navigation";
 
 const getUserByEmail = async (email: string) => {
@@ -59,7 +59,7 @@ export const createAccount = async ({
       {
         fullName,
         email,
-        avatar: avatarPlaceholderUrl,
+        avatar: "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
         accountId,
       },
     );
