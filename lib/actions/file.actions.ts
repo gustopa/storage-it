@@ -80,7 +80,7 @@ const createQueries = (
   if (limit) queries.push(Query.limit(limit));
 
   if (sort) {
-    const [sortBy, orderBy] = sort.split("-");
+    const [sortBy, orderBy] = sort.split("-");                                              
 
     queries.push(
       orderBy === "asc" ? Query.orderAsc(sortBy) : Query.orderDesc(sortBy),
@@ -111,7 +111,7 @@ export const getFiles = async ({
       queries,
     );
 
-    console.log({ files });
+    // console.log({ files });
     return parseStringify(files);
   } catch (error) {
     handleError(error, "Failed to get files");

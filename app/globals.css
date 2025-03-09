@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.radix-dialog-overlay {
+  pointer-events: none !important;
+}
+
 @layer base {
   * {
     @apply scroll-smooth;
